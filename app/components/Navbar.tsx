@@ -57,37 +57,40 @@ const Navbar: React.FC = () => {
       </Link>
 
       {/*Navlist Items  */}
-      <Flexbox
-        backgroundColor="#000000"
-        padding={{ sm: "0px 10px", md: "0px", lg: "0px" }}
-        direction={{ sm: "column", md: "row", lg: "row" }}
-        align={{ sm: "flex-start", md: "center", lg: "center" }}
-        gap={{ lg: "20px", md: "10px", sm: "18px" }}
-        justify={{ lg: "flex-end", md: "center", sm: "center" }}
-        className={`z-20 max-lg:!${!isMenuOpen ? "hidden" : ""}`}
-      >
-        <Link href={"/"} className="text-sm ">
-          Home
-        </Link>
-        <Link href={"/docs"} className="text-sm ">
-          Docs
-        </Link>
-        <Link href={"/about"} className="text-sm ">
-          About
-        </Link>
-        <Link href={"/templates"} className="text-sm ">
-          Templates
-        </Link>
-        <Button
-          className="z-20 animate-slide-in-right font-mono text-sm text-white hover:!bg-black"
-          borderColor="white"
-          size="md"
-          iconAfter={<FaExternalLinkAlt />}
-          onClick={()=> router.push('/docs')}
+
+      {isMenuOpen && (
+        <Flexbox
+          backgroundColor="#000000"
+          padding={{ sm: "0px 10px", md: "0px", lg: "0px" }}
+          direction={{ sm: "column", md: "row", lg: "row" }}
+          align={{ sm: "flex-start", md: "center", lg: "center" }}
+          gap={{ lg: "20px", md: "10px", sm: "18px" }}
+          justify={{ lg: "flex-end", md: "center", sm: "center" }}
+          className={`z-20 max-lg:!${!isMenuOpen ? "hidden" : ""}`}
         >
-          Get started
-        </Button>
-      </Flexbox>
+          <Link href={"/"} className="text-sm ">
+            Home
+          </Link>
+          <Link href={"/docs"} className="text-sm ">
+            Docs
+          </Link>
+          <Link href={"/about"} className="text-sm ">
+            About
+          </Link>
+          <Link href={"/templates"} className="text-sm ">
+            Templates
+          </Link>
+          <Button
+            className="z-20 animate-slide-in-right font-mono text-sm text-white hover:!bg-black"
+            borderColor="white"
+            size="md"
+            iconAfter={<FaExternalLinkAlt />}
+            onClick={() => router.push("/docs")}
+          >
+            Get started
+          </Button>
+        </Flexbox>
+      )}
     </Flexbox>
   );
 };

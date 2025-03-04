@@ -76,7 +76,7 @@ const Page = () => {
           <CodeClipboard
             language="bash"
             code="npm i shadlc"
-            className="!w-[45%] max-lg:w-full animate-fade-in mt-2 !bg-[#010e03d0] border border-green-500 text-green-400"
+            className="!w-[45%] max-lg:!w-full animate-fade-in mt-2 !bg-[#010e03d0] border border-green-500 text-green-400"
           />
         )}
 
