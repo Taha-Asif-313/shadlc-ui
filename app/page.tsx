@@ -48,7 +48,7 @@ const Page = () => {
           UI
         </Text>
 
-        <p className="z-20 text-white lg:w-[60%] font-mono text-center tracking-wider text-sm">
+        <p className="z-20 text-white lg:w-[60%] font-mono text-center leading-tight !mt-6 text-sm">
           <span className="text-green-500 font-bold [text-shadow:_0_0px_10px_green] text-sm">
             Shadlc
           </span>{" "}

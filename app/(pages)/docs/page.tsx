@@ -53,13 +53,14 @@ const GetStarted = () => {
       <CodeClipboard
         code="npm i shadlc"
         language="javascript"
-        className="w-full  animate-fade-in py-4 !bg-[#010e03d0] border border-green-500 text-green-400 "
+        className="w-full my-4 animate-fade-in py-4 !bg-[#010e03d0] border border-green-500 text-green-400 "
       />
 
       {/* Step 2: Configure Tailwind */}
       <Text
         className="mt-2"
         fontSize="20px"
+        
         fontWeight={600}
         color="white"
         as="h3"
@@ -69,7 +70,7 @@ const GetStarted = () => {
       <CodeClipboard
         code={`npm install tailwindcss postcss autoprefixer\nnpx tailwindcss init`}
         language="javascript"
-        className="w-full animate-fade-in py-4 !bg-[#010e03d0] border border-green-500 text-green-400 "
+        className="w-full animate-fade-in py-4 my-4 !bg-[#010e03d0] border border-green-500 text-green-400 "
       />
 
       {/* Tailwind Config Instructions */}
@@ -95,7 +96,7 @@ const GetStarted = () => {
   plugins: [],
 };`}
         language="javascript"
-        className="w-full animate-fade-in py-4 !bg-[#010e03d0] border border-green-500 text-green-400 "
+        className="w-full my-4 animate-fade-in py-4 !bg-[#010e03d0] border border-green-500 text-green-400 "
       />
 
       {/* Step 3: Import shadlc Styles */}
@@ -115,7 +116,7 @@ const GetStarted = () => {
       <CodeClipboard
         code={`import "shadlc/style.css";`}
         language="javascript"
-        className="w-full animate-fade-in py-4 !bg-[#010e03d0] border border-green-500 text-green-400 "
+        className="w-full my-4 animate-fade-in py-4 !bg-[#010e03d0] border border-green-500 text-green-400 "
       />
 
       {/* Using in Next.js */}
@@ -131,14 +132,14 @@ const GetStarted = () => {
       <CodeClipboard
         code={`"use client";`}
         language="javascript"
-        className="w-full animate-fade-in py-4 !bg-[#010e03d0] border border-green-500 text-green-400 "
+        className="w-full my-4 animate-fade-in py-4 !bg-[#010e03d0] border border-green-500 text-green-400 "
       />
 
       {/* Why Choose Shadlc */}
       <Text className="mt-4" fontSize="20px" fontWeight={600} color="white">
         Why Choose Shadlc for React and Tailwind Integration?
       </Text>
-      <Text fontSize="15px" lineHeight="20px" color="white">
+      <Text fontSize="15px" lineHeight="20ox" color="white">
         Shadlc is one of the best frontend development tools available today.
         Its powerful React and Tailwind integration enables seamless UI
         development with Material Design principles. As a JavaScript UI
