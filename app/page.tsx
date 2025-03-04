@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { Button, CodeClipboard, Flexbox, Image, Text } from "shadlc";
+import Head from "next/head";
 
 const Page = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -13,6 +14,12 @@ const Page = () => {
 
   return (
     <>
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="Uhg0BH9AxM8cuz_gUbffteq2_oeYyOTcbKg_BYK5l54"
+        />
+      </Head>
       <Navbar />
       <Flexbox
         height={{ sm: "100vh", md: "100vh", lg: "100vh" }}
@@ -26,7 +33,7 @@ const Page = () => {
         {/* Prevent Hydration Error on Image */}
         {isMounted && (
           <Image
-          alt="logo"
+            alt="logo"
             height="100%"
             width="100%"
             className="!absolute animate-pulse -z-5 left-0 bottom-0"
