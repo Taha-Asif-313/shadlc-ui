@@ -99,6 +99,7 @@ const TextComponentDocs = () => {
     >
       <UIComponentDisplay
         title="Text Component"
+        ImportComponent="import { Text } from 'shadlc'"
         description="The <Text /> component is a versatile React UI component for displaying styled text. It supports typography customization, font sizes, colors, alignment, and responsive adjustments for seamless integration into any design."
         code={`
   // Usage of component.

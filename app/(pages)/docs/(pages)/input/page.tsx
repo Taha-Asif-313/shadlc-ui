@@ -1,8 +1,7 @@
 "use client";
-
 import UIComponentDisplay from "@/app/components/UiComponentDisplay";
 import React from "react";
-import { FaCheck, FaLock, FaUser } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import { Flexbox, Input, Table } from "shadlc";
 
 const InputComponentDocs = () => {
@@ -166,6 +165,7 @@ const InputComponentDocs = () => {
     >
       <UIComponentDisplay
         title="Input Component"
+        ImportComponent="import { Input } from 'shadlc'"
         description="The <Input /> component is a highly customizable React UI component for capturing user input. It supports various types, sizes, validation states, icons, and custom styles to enhance form usability and accessibility."
         code={`
   // Usage of component.

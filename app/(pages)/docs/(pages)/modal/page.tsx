@@ -1,16 +1,7 @@
 "use client";
 import UIComponentDisplay from "@/app/components/UiComponentDisplay";
 import React, { useState } from "react";
-import { FaArrowRight, FaCheck, FaUser } from "react-icons/fa";
-import {
-  Button,
-  Card,
-  CodeClipboard,
-  Flexbox,
-  Modal,
-  Table,
-  Text,
-} from "shadlc";
+import { Flexbox, Modal, Table } from "shadlc";
 
 const ModalComponentDocs = () => {
   const columns = [
@@ -103,6 +94,7 @@ const ModalComponentDocs = () => {
     >
       <UIComponentDisplay
         title="Modal Component"
+        ImportComponent="import { Modal } from 'shadlc'"
         description="The <Modal /> component is a versatile React UI component for displaying dynamic content in an overlay. It supports animations, customizable sizes, close actions, and accessibility features, making it ideal for popups, dialogs, and notifications."
         code={`
   // Define states you want.

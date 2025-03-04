@@ -182,6 +182,7 @@ const ImageComponentDocs = () => {
     >
       <UIComponentDisplay
         title="Image Component"
+        ImportComponent="import { Image } from 'shadlc'"
         description="The <Image /> component is a responsive and optimized React UI component for displaying images. It supports lazy loading, custom styling, aspect ratios, and various formats, ensuring fast and efficient rendering for web applications."
         code={`
   // Usage of component.

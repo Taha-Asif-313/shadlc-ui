@@ -1,16 +1,7 @@
 "use client";
-
 import UIComponentDisplay from "@/app/components/UiComponentDisplay";
 import React from "react";
-import { FaCheck, FaLock, FaUser } from "react-icons/fa";
-import {
-  AudioGallery,
-  Flexbox,
-  ImageGallery,
-  Input,
-  Table,
-  VideoGallery,
-} from "shadlc";
+import { AudioGallery, Flexbox } from "shadlc";
 
 const AudioGalleryComponentDocs = () => {
   const tracks = [
@@ -42,6 +33,7 @@ const AudioGalleryComponentDocs = () => {
     >
       <UIComponentDisplay
         title="Audio Gallery Component"
+        ImportComponent="import { AudioGallery } from 'shadlc'"
         description=" The <AudioGallery /> component is a sleek and interactive React UI component for managing and playing multiple audio tracks. It features a built-in player, playlist support, volume control, and a progress bar, making it perfect for showcasing audio collections."
         code={`
   // Define audios you want to add in gallery like this.

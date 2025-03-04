@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import {
   AiOutlineDesktop,
@@ -11,6 +12,7 @@ interface UIComponentProps {
   title: string;
   description: string;
   children: React.ReactNode;
+  ImportComponent?: string;
   code: string;
 }
 
@@ -18,6 +20,7 @@ const UIComponentDisplay: React.FC<UIComponentProps> = ({
   title,
   description,
   children,
+  ImportComponent = "",
   code,
 }) => {
   const [activeTab, setActiveTab] = useState("desktop");
@@ -42,7 +45,8 @@ const UIComponentDisplay: React.FC<UIComponentProps> = ({
         <div>
           {/* Title & Description */}
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="text-sm !mt-5 text-gray-300">{description}</p>
+          <p className="text-sm !my-5 text-gray-300">{description}</p>
+          <CodeClipboard code={ImportComponent} />
         </div>
         {/* Tabs */}
         <div className="flex gap-3 mt-3 pb-2">

@@ -1,9 +1,7 @@
 "use client";
-
 import UIComponentDisplay from "@/app/components/UiComponentDisplay";
 import React from "react";
-import { FaCheck, FaLock, FaUser } from "react-icons/fa";
-import { Flexbox, GridView, Input, Table } from "shadlc";
+import { Flexbox, GridView, Table } from "shadlc";
 
 const GridViewComponentDocs = () => {
   const columns = [
@@ -83,6 +81,7 @@ const GridViewComponentDocs = () => {
     >
       <UIComponentDisplay
         title="GridView Component"
+        ImportComponent="import { GridView } from 'shadlc'"
         description="The <GridView /> component is a versatile and responsive React UI component for creating structured layouts using CSS Grid. It allows precise control over columns, rows, spacing, and responsiveness, making it perfect for building modern grid-based designs."
         code={`
   // Usage of component.

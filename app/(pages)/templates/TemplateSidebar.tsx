@@ -1,15 +1,14 @@
 "use client";
-
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { FaExternalLinkAlt, FaAngleDown } from "react-icons/fa";
+import { FaAngleDown } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { RiMenu4Line } from "react-icons/ri";
 import { Button, Flexbox, Image, Text } from "shadlc";
 
 const Sidebar = () => {
-  const [isMounted, setIsMounted] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(
     "Basic Components"
   );
@@ -53,7 +52,7 @@ const Sidebar = () => {
 
       {/* Sidebar Header */}
       <Link href="/" className="flex items-center gap-1">
-        <Image height="30px" width="30px" src="/favicon.png" />
+        <Image alt="logo" height="30px" width="30px" src="/favicon.png" />
         <Text as="span" color="text-white" fontSize="18px" fontWeight={800}>
           Shadlc{" "}
           <Text
@@ -78,10 +77,10 @@ const Sidebar = () => {
           gap={{ lg: "5px" }}
         >
           <Link
-            href="/docs"
+            href="/template"
             className="text-[14px] px-[12px] py-[8px] rounded-lg"
           >
-            Get Started
+            Templates
           </Link>
 
           {/* Dropdown Menu */}
@@ -100,22 +99,12 @@ const Sidebar = () => {
               }
               onClick={() => toggleDropdown("Basic Components")}
             >
-              Basic Components
+            Hero Section
             </Button>
             {openDropdown === "Basic Components" && (
               <div className="flex flex-col items-start px-3">
                 {[
-                  "Text",
-                  "Button",
-                  "Input",
-                  "Image",
-                  "Tabs",
-                  "Card",
-                  "Modal",
-                  "Dropdown",
-                  "Accordation",
-                  "VideoPlayer",
-                  "AudioPlayer",
+                  "Comming soon!",
                 ].map((item) => (
                   <Link
                     key={item}
@@ -129,7 +118,7 @@ const Sidebar = () => {
             )}
           </div>
           {/* Dropdown Menu */}
-          <div className="relative">
+          {/* <div className="relative">
             <Button
               className="bg-transparent py-2 hover:bg-green-950"
               size="sm"
@@ -159,9 +148,9 @@ const Sidebar = () => {
                 ))}
               </div>
             )}
-          </div>
+          </div> */}
           {/* Dropdown Menu */}
-          <div className="relative">
+          {/* <div className="relative">
             <Button
               className="bg-transparent py-2 hover:bg-green-950"
               size="sm"
@@ -193,7 +182,7 @@ const Sidebar = () => {
                 )}
               </div>
             )}
-          </div>
+          </div> */}
         </Flexbox>
       )}
     </Flexbox>

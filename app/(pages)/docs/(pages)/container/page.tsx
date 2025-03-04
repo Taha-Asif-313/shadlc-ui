@@ -93,6 +93,7 @@ const ContainerComponentDocs = () => {
     >
       <UIComponentDisplay
         title="Container Component"
+        ImportComponent="import { Container } from 'shadlc'"
         description="The <Container /> component is a versatile and responsive layout wrapper in React that helps structure content within defined width constraints. It supports customizable width, padding, margin, and background styles, ensuring a consistent and adaptive UI across different screen sizes."
         code={`
   // Usage of component.

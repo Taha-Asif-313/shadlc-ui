@@ -1,7 +1,7 @@
 "use client";
 import UIComponentDisplay from "@/app/components/UiComponentDisplay";
 import React from "react";
-import { AudioPlayer, Flexbox, Table, VideoPlayer } from "shadlc";
+import { AudioPlayer, Flexbox, Table } from "shadlc";
 
 const AudioComponentDocs = () => {
   const columns = [
@@ -81,6 +81,7 @@ const AudioComponentDocs = () => {
     >
       <UIComponentDisplay
         title="Audio Player Component"
+        ImportComponent="import { AudioGallery } from 'shadlc'"
         description="The <AudioPlayer /> component is a customizable React UI component for playing audio files. It includes play/pause controls, a progress bar, volume adjustment, and seamless playback, making it ideal for music streaming, podcasts, and audio-based applications."
         code={`
   // Usage of component

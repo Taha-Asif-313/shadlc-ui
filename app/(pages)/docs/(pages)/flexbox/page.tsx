@@ -1,9 +1,7 @@
 "use client";
-
 import UIComponentDisplay from "@/app/components/UiComponentDisplay";
 import React from "react";
-import { FaCheck, FaLock, FaUser } from "react-icons/fa";
-import { Flexbox, Input, Table } from "shadlc";
+import { Flexbox, Table } from "shadlc";
 
 const FlexboxComponentDocs = () => {
   const columns = [
@@ -95,6 +93,7 @@ const FlexboxComponentDocs = () => {
     >
       <UIComponentDisplay
         title="Flexbox Component"
+        ImportComponent="import { Flexbox } from 'shadlc'"
         description="The <Flexbox /> component is a powerful and responsive React UI component for creating flexible and adaptive layouts. It simplifies alignment, spacing, and positioning using CSS Flexbox properties, making it ideal for building modern, responsive designs."
         code={`
     // Usage of component.

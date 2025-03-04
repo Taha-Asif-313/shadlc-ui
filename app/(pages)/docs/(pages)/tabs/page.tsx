@@ -1,9 +1,8 @@
 "use client";
 import UIComponentDisplay from "@/app/components/UiComponentDisplay";
 import React from "react";
-import { FaArrowRight, FaCheck, FaUser } from "react-icons/fa";
 import { FiHome, FiSettings, FiUser } from "react-icons/fi";
-import { Button, CodeClipboard, Flexbox, Table, Tabs, Text } from "shadlc";
+import { Flexbox, Table, Tabs } from "shadlc";
 
 const TabsComponentDocs = () => {
   const tabData = [
@@ -92,6 +91,7 @@ const TabsComponentDocs = () => {
     >
       <UIComponentDisplay
         title="Tabs Component"
+        ImportComponent="import { Tabs } from 'shadlc'"
         description="The <Tabs /> component is a customizable React UI component for organizing content into multiple tabbed sections. It supports dynamic content, vertical and horizontal layouts, animation effects, and full accessibility support."
         code={`
   // Define tabsData like this label is the tab name and content is any component you want to display.

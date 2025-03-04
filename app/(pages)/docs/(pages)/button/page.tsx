@@ -1,8 +1,7 @@
 "use client";
 import UIComponentDisplay from "@/app/components/UiComponentDisplay";
 import React from "react";
-import { FaArrowRight, FaCheck, FaUser } from "react-icons/fa";
-import { Button, CodeClipboard, Flexbox, Table, Text } from "shadlc";
+import { Button, Flexbox, Table } from "shadlc";
 
 const ButtonComponentDocs = () => {
   const columns = [
@@ -11,7 +10,6 @@ const ButtonComponentDocs = () => {
     { key: "default", label: "Default", sortable: true },
     { key: "description", label: "Description" },
   ];
-
   const data = [
     {
       prop: "variant",
@@ -89,6 +87,7 @@ const ButtonComponentDocs = () => {
     >
       <UIComponentDisplay
         title="Button Component"
+        ImportComponent="import { Button } from 'shadlc'"
         description="The <Button /> component is a versatile and customizable React UI element for user interactions. It supports various styles, sizes, icons, and states like loading and disabled, making it perfect for modern web applications."
         code={`
   // Usage of component.

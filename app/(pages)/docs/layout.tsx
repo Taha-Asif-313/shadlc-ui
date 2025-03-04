@@ -1,5 +1,6 @@
-import Sidebar from "@/app/(pages)/docs/Sidebar";
+
 import { Metadata } from "next";
+import Sidebar from "./DocsSidebar";
 
 export const metadata: Metadata = {
   title: "Shadlc UI - A light weight ui library",

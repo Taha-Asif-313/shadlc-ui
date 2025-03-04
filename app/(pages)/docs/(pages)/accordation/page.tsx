@@ -149,6 +149,7 @@ const AccordationComponentDocs = () => {
     >
       <UIComponentDisplay
         title="Accordion Component"
+        ImportComponent="import { Accordion } from 'shadlc'"
         description=" The <Accordion /> component is a dynamic and customizable React UI element for organizing content in collapsible sections. It supports multiple panels, animations, and various styling options for an enhanced user experience."
         code={`
   // Define accordation items you want to add in accordation like this.

@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
 
       {/* Logo icon  */}
       <Link href={"/"} className="flex items-center gap-1">
-        <Image height="30px" width="30px" src="favicon.ico" />
+        <Image alt="logo" height="30px" width="30px" src="favicon.ico" />
         <Text
           as="span"
           color="text-white"

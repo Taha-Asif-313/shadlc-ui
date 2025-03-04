@@ -26,6 +26,7 @@ const Page = () => {
         {/* Prevent Hydration Error on Image */}
         {isMounted && (
           <Image
+          alt="logo"
             height="100%"
             width="100%"
             className="!absolute animate-pulse -z-5 left-0 bottom-0"

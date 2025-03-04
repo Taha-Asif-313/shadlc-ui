@@ -1,9 +1,7 @@
 "use client";
-
 import UIComponentDisplay from "@/app/components/UiComponentDisplay";
 import React from "react";
-import { FaCheck, FaLock, FaUser } from "react-icons/fa";
-import { Flexbox, ImageGallery, Input, Table } from "shadlc";
+import { Flexbox, ImageGallery } from "shadlc";
 
 const ImageGalleryComponentDocs = () => {
   const images = [
@@ -46,6 +44,7 @@ const ImageGalleryComponentDocs = () => {
     >
       <UIComponentDisplay
         title="Image Gallery Component"
+        ImportComponent="import { ImageGallery } from 'shadlc'"
         description="The <ImageGallery /> component is a flexible and responsive React UI component for displaying images in a grid or masonry layout. It supports lightbox previews, custom columns, spacing, and lazy loading for an optimized user experience."
         code={`
   // Define images you want to add in gallery like this.

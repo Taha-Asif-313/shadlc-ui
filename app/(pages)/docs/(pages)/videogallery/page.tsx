@@ -1,9 +1,7 @@
 "use client";
-
 import UIComponentDisplay from "@/app/components/UiComponentDisplay";
 import React from "react";
-import { FaCheck, FaLock, FaUser } from "react-icons/fa";
-import { Flexbox, ImageGallery, Input, Table, VideoGallery } from "shadlc";
+import { Flexbox, VideoGallery } from "shadlc";
 
 const VideoGalleryComponentDocs = () => {
   const videos = [
@@ -42,6 +40,7 @@ const VideoGalleryComponentDocs = () => {
     >
       <UIComponentDisplay
         title="Video Gallery Component"
+        ImportComponent="import { VideoGallery } from 'shadlc'"
         description="The <VideoGallery /> component is a responsive and customizable React UI component for displaying video collections in a grid or masonry layout. It supports lightbox previews, autoplay, looping, custom styling, and interactive controls for an enhanced user experience."
         code={`
   // Define videos you want to add in gallery like this.

@@ -1,9 +1,8 @@
 "use client";
-
 import UIComponentDisplay from "@/app/components/UiComponentDisplay";
 import React, { useState } from "react";
-import { FaCheck, FaCog, FaLock, FaSignOutAlt, FaUser } from "react-icons/fa";
-import { Dropdown, Flexbox, GridView, Input, Table } from "shadlc";
+import { FaCog, FaSignOutAlt, FaUser } from "react-icons/fa";
+import { Dropdown, Flexbox, Table } from "shadlc";
 
 const DropdownComponentDocs = () => {
   const columns = [
@@ -182,6 +181,7 @@ const DropdownComponentDocs = () => {
     >
       <UIComponentDisplay
         title="Dropdown Component"
+        ImportComponent="import { Dropdown } from 'shadlc'"
         description="The <Dropdown /> component is a customizable and interactive React UI element for selecting options from a list. It supports various styles, animations, icons, and user-friendly features like search, multi-select, and keyboard navigation for an enhanced user experience."
         code={`
   // Define state to select value from dropdown.

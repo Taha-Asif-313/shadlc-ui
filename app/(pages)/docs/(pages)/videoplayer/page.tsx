@@ -1,16 +1,7 @@
 "use client";
 import UIComponentDisplay from "@/app/components/UiComponentDisplay";
 import React from "react";
-import { FaArrowRight, FaCheck, FaUser } from "react-icons/fa";
-import {
-  Button,
-  CodeClipboard,
-  Flexbox,
-  Image,
-  Table,
-  Text,
-  VideoPlayer,
-} from "shadlc";
+import { Flexbox, Table, VideoPlayer } from "shadlc";
 
 const VideoComponentDocs = () => {
   const columns = [
@@ -96,12 +87,13 @@ const VideoComponentDocs = () => {
     >
       <UIComponentDisplay
         title="VideoPlayer Component"
+        ImportComponent="import { VideoPlayer } from 'shadlc'"
         description="The <VideoPlayer /> component is a versatile and customizable React component designed to provide a seamless video playback experience. It supports autoplay, controls, fullscreen mode, and custom styling, making it perfect for modern web applications."
         code={`
   // Usage of component.
   <VideoPlayer 
     src="https://www.w3schools.com/html/mov_bbb.mp4"
-    poster="https://via.placeholder.com/800x450"
+    poster="https://letsenhance.io/static/a31ab775f44858f1d1b80ee51738f4f3/11499/EnhanceAfter.jpg"
     backgroundColor="#222"
     primaryColor="#ff5722"
     borderRadius="16px"
@@ -112,7 +104,7 @@ const VideoComponentDocs = () => {
       >
         <VideoPlayer
           src="https://www.w3schools.com/html/mov_bbb.mp4"
-          poster="https://via.placeholder.com/800x450"
+          poster="https://letsenhance.io/static/a31ab775f44858f1d1b80ee51738f4f3/11499/EnhanceAfter.jpg"
           backgroundColor="#222"
           primaryColor="#ff5722"
           borderRadius="16px"

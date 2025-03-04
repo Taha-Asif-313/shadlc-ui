@@ -1,8 +1,7 @@
 "use client";
 import UIComponentDisplay from "@/app/components/UiComponentDisplay";
 import React from "react";
-import { FaArrowRight, FaCheck, FaUser } from "react-icons/fa";
-import { Button, Card, CodeClipboard, Flexbox, Table, Text } from "shadlc";
+import { Card, Flexbox, Table } from "shadlc";
 
 const CardComponentDocs = () => {
   const columns = [
@@ -153,6 +152,7 @@ const CardComponentDocs = () => {
     >
       <UIComponentDisplay
         title="Card Component"
+        ImportComponent="import { Card } from 'shadlc'"
         description="The <Card /> component is a flexible and stylish React UI element for displaying content in a structured format. It supports images, text, buttons, and customizable styles, making it ideal for showcasing information in a visually appealing way."
         code={`
   // Usage of component.
