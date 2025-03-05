@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { RiMenu4Line } from "react-icons/ri";
@@ -10,6 +10,13 @@ import { Button, Flexbox, Image, Text } from "shadlc";
 const Navbar: React.FC = () => {
   const router = useRouter();
   const [isMenuOpen, setisMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth > 1024) {
+      setisMenuOpen(true);
+    }
+  }, [])
+  
 
   return (
     <Flexbox
