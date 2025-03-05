@@ -10,9 +10,9 @@ const geist = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Shadlc UI - A light weight ui library",
+  title: "Shadlc - A light weight ui library",
   description:
-    "Build beautiful, fast, and responsive web apps with our modern UI library. Fully customizable, lightweight, and accessible components for React, Vue, and more.",
+    "Build beautiful, fast, and responsive web apps with our modern shadlc UI library. Fully customizable, lightweight, and accessible components for React, Vue, and more.",
   keywords:
     "UI library, React components, Vue UI kit, Web design, Frontend framework, Accessible UI, Customizable components, CSS framework",
 };
